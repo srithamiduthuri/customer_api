@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Customer Management</h1>
+
+  <!-- Create Form -->
+  <h2>Add Customer</h2>
+  <form id="customerForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phone" placeholder="Phone">
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- List Customers -->
+  <h2>Customer List</h2>
+  <table border="1">
+    <thead>
+      <tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Actions</th></tr>
+    </thead>
+    <tbody id="customerList"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
